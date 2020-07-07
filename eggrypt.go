@@ -26,7 +26,7 @@ func main() {
 	case "decrypt":
 		decryptHandle()
 	default:
-		fmt.Println("Run CryptoGo encrypt to encrypt a file, and CryptoGo decrypt to decrypt a file.")
+		fmt.Println("Run eggrypt encrypt to encrypt a file, and eggrypt decrypt to decrypt a file.")
 		os.Exit(1)
 	}
 
@@ -38,9 +38,9 @@ func printHelp() {
 	fmt.Println("")
 	fmt.Println("Usage:")
 	fmt.Println("")
-	fmt.Println("Eggrypt encrypt /path/to/your/file")
+	fmt.Println("eggrypt encrypt /path/to/your/file")
 	fmt.Println("")
-	fmt.Println("Commands:")
+	fmt.Println("commands:")
 	fmt.Println("")
 	fmt.Println("\t encrypt\tEncrypts a file given a password")
 	fmt.Println("\t decrypt\tTries to decrypt a file using a password")
@@ -51,7 +51,7 @@ func printHelp() {
 func encryptHandle() {
 
 	if len(os.Args) < 3 {
-		println("Missing the path to the file. For more information run CryptoGo help")
+		println("Missing the path to the file. For more information run eggrypt help")
 		os.Exit(0)
 	}
 
@@ -84,7 +84,7 @@ func getPassword() []byte {
 func decryptHandle() {
 
 	if len(os.Args) < 3 {
-		println("Missing the path to the file. For more information run CryptoGo help")
+		println("Missing the path to the file. For more information run eggrypt help")
 		os.Exit(0)
 	}
 
